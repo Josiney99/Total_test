@@ -1,0 +1,95 @@
+{
+  "battery": {
+    "enabled": true,
+
+    "health": {
+      "capacity_percent": {
+        "pass_min": 70,
+        "warning_min": 60,
+        "fail_below": 60
+      }
+    },
+
+    "temperature": {
+      "warning": 45,
+      "critical": 50
+    },
+
+    "charge": {
+      "enabled": true,
+      "test": true,
+      "minimum_duration_seconds": 300,
+      "minimum_charge_variation_percent": 2
+    },
+
+    "discharge": {
+      "enabled": true,
+      "test": true,
+      "minimum_duration_seconds": 300,
+      "minimum_capacity_variation_percent": 2
+    },
+
+    "voltage": {
+      "enabled": true,
+      "collect": true
+    },
+
+    "current": {
+      "enabled": true,
+      "collect": true
+    },
+
+    "cycles": {
+      "enabled": true,
+      "collect": true
+    },
+
+    "designed_capacity": {
+      "enabled": true,
+      "collect": true
+    },
+
+    "full_charge_capacity": {
+      "enabled": true,
+      "collect": true
+    },
+
+    "wear_level": {
+      "enabled": true,
+      "calculate": true
+    },
+
+    "state_of_charge": {
+      "enabled": true,
+      "collect": true
+    },
+
+    "charger": {
+      "allow_connected_during_test": true,
+      "detect_ac_status": true
+    },
+
+    "compatibility": {
+      "detect_non_original_battery": true,
+      "detect_incompatible_battery": true,
+      "fail_when_information_unavailable": false
+    },
+
+    "test_control": {
+      "stop_on_critical_temperature": true,
+      "stop_on_battery_failure": true,
+      "stop_on_system_shutdown": true,
+      "stop_on_battery_disconnect": true
+    },
+
+    "sampling": {
+      "interval_seconds": 30
+    },
+
+    "result": {
+      "not_applicable_without_battery": true,
+      "preserve_raw_values": true,
+      "generate_evidence": true
+    }
+  }
+}
